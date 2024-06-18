@@ -11,6 +11,7 @@ body {
 .image-container {
     position: relative;
     width: fit-content;
+    min-height: 100px;
     
 }
 
