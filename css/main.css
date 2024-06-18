@@ -68,3 +68,34 @@ body {
     grid-column: 3;
     grid-row: 1;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .overlay-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .overlay {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .overlay {
+        width: 80px;
+        height: 80px;
+    }
+}
