@@ -2,7 +2,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 350vh;
+    height: 325vh;
+    padding: 0 5px;
     margin: 0;
     background-color: #f0f0f0;
 }
@@ -10,6 +11,7 @@ body {
 .image-container {
     position: relative;
     width: fit-content;
+    
 }
 
 .main-image {
