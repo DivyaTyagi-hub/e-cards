@@ -2,8 +2,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 325vh;
-    padding: 0 5px;
+    height: 390vh;
+    padding: 0;
     margin: 0;
     background-color: #f0f0f0;
 }
@@ -12,13 +12,15 @@ body {
     position: relative;
     width: fit-content;
     min-height: 100px;
-    
 }
 
 .main-image {
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 400vh;
+    width: 100vw;
+    width: 2100px;
+    
 }
 
 .overlay-grid {
@@ -26,8 +28,8 @@ body {
     grid-template-columns: repeat(3, min-content);
     gap: 25px;
     position: absolute;
-    bottom: 50px; 
-    left: 71%; 
+    bottom: 30px; 
+    left: 62%; 
     transform: translateX(-50%); 
     width: 100%;
     height: 100%;
@@ -42,8 +44,8 @@ body {
 }
 
 .overlay {
-    width: 200px; 
-    height: 200px; 
+    width: 300px; 
+    height: 300px; 
     opacity: 0.8; 
     align-self: center; 
     justify-self: center; 
@@ -73,32 +75,46 @@ body {
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media screen and (max-width: 1251px) {
+    body {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        padding: 0;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+    .image-container {
+        position: relative;
+        width: 100%; 
+        max-width: 1251px; 
+        max-height: 1400px;
+        padding: 0; 
+    }
+    .main-image {
+        display: flex;
+        width: 1300px;
+        height: 200vh;
+        height: 1090px;
+        height:100vmax;
+           
+    }
     .overlay-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
+        width: 100%; 
+        max-width: 450px; 
     }
 
     .overlay {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-@media (max-width: 480px) {
-    .overlay-grid {
-        grid-template-columns: 1fr;
-        gap: 10px;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .overlay {
-        width: 80px;
-        height: 80px;
+        width: 150px;
+        height: 135px;
+        height: 20 vmax;
+        width: 80%
+        
     }
 }
